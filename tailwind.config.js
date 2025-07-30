@@ -8,9 +8,12 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'gcsb-blue': '#1e3a8a',
-        'gcsb-light': '#3b82f6',
-        'nz-black': '#1f2937',
+        'gcsb-blue': '#000000',
+        'gcsb-light': '#333333',
+        'nz-black': '#000000',
+        'accent-gray': '#666666',
+        'light-gray': '#f5f5f5',
+        'dark-gray': '#1a1a1a',
       },
       animation: {
         'fade-in': 'fadeIn 0.6s ease-in-out',

@@ -67,7 +67,7 @@ const Certifications = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-gcsb-blue mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold text-black mb-6">
             Certifications & Achievements
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
@@ -84,7 +84,7 @@ const Certifications = () => {
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            <h3 className="text-2xl font-bold text-gcsb-blue mb-8 flex items-center">
+            <h3 className="text-2xl font-bold text-black mb-8 flex items-center">
               <Award className="mr-3 h-8 w-8" />
               Professional Certifications
             </h3>
@@ -101,7 +101,7 @@ const Certifications = () => {
                 >
                   <div className="flex justify-between items-start mb-4">
                     <div className="flex-1">
-                      <h4 className="text-lg font-bold text-gcsb-blue mb-1">
+                      <h4 className="text-lg font-bold text-black mb-1">
                         {cert.title}
                       </h4>
                       <p className="text-gray-600 mb-2">{cert.issuer}</p>
@@ -113,7 +113,7 @@ const Certifications = () => {
                     <span className={`px-3 py-1 rounded-full text-sm font-medium ${
                       cert.status === 'In Progress' 
                         ? 'bg-yellow-100 text-yellow-800' 
-                        : 'bg-blue-100 text-blue-800'
+                        : 'bg-gray-100 text-gray-800'
                     }`}>
                       {cert.status}
                     </span>
@@ -123,8 +123,8 @@ const Certifications = () => {
                     {cert.description}
                   </p>
                   
-                  <div className="bg-gcsb-blue bg-opacity-10 p-3 rounded">
-                    <p className="text-gcsb-blue font-medium text-sm">
+                  <div className="bg-black bg-opacity-10 p-3 rounded">
+                    <p className="text-black font-medium text-sm">
                       GCSB Relevance: {cert.relevance}
                     </p>
                   </div>
@@ -140,7 +140,7 @@ const Certifications = () => {
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            <h3 className="text-2xl font-bold text-gcsb-blue mb-8">
+            <h3 className="text-2xl font-bold text-black mb-8">
               Technical Achievements
             </h3>
             
@@ -155,7 +155,7 @@ const Certifications = () => {
                   className="bg-gray-50 rounded-lg p-6"
                 >
                   <div className="flex justify-between items-start mb-3">
-                    <h4 className="text-lg font-bold text-gcsb-blue">
+                    <h4 className="text-lg font-bold text-black">
                       {achievement.title}
                     </h4>
                     <span className="text-gray-500 text-sm">
@@ -172,12 +172,12 @@ const Certifications = () => {
             {/* CV Download */}
             <motion.div
               whileHover={{ scale: 1.02 }}
-              className="bg-gcsb-blue text-white p-6 rounded-lg"
+              className="bg-black text-white p-6 rounded-lg"
             >
               <h4 className="text-xl font-bold mb-3">
                 Complete Professional Profile
               </h4>
-              <p className="text-blue-100 mb-4">
+              <p className="text-gray-200 mb-4">
                 Download my comprehensive CV for detailed information about my 
                 technical background, projects, and qualifications.
               </p>
@@ -187,7 +187,7 @@ const Certifications = () => {
                   target="_blank"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  className="bg-white text-gcsb-blue px-6 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors inline-flex items-center justify-center"
+                  className="bg-white text-black px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors inline-flex items-center justify-center"
                 >
                   <Download className="mr-2 h-5 w-5" />
                   Download CV (PDF)
@@ -197,7 +197,7 @@ const Certifications = () => {
                   target="_blank"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  className="border-2 border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-gcsb-blue transition-colors inline-flex items-center justify-center"
+                  className="border-2 border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-black transition-colors inline-flex items-center justify-center"
                 >
                   <ExternalLink className="mr-2 h-5 w-5" />
                   Portfolio Summary
@@ -215,7 +215,7 @@ const Certifications = () => {
           className="text-center"
         >
           <div className="bg-gray-50 p-8 rounded-lg">
-            <h3 className="text-2xl font-bold text-gcsb-blue mb-4">
+            <h3 className="text-2xl font-bold text-black mb-4">
               Continuous Professional Development
             </h3>
             <p className="text-gray-700 leading-relaxed max-w-3xl mx-auto">

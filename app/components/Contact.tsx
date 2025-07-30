@@ -32,7 +32,7 @@ const Contact = () => {
   ]
 
   return (
-    <section id="contact" className="py-20 bg-gcsb-blue text-white">
+    <section id="contact" className="py-20 bg-black text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -44,7 +44,7 @@ const Contact = () => {
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
             Get In Touch
           </h2>
-          <p className="text-xl text-blue-100 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl text-gray-100 max-w-3xl mx-auto leading-relaxed">
             Ready to contribute to New Zealand's national security through technical excellence. 
             Let's discuss how my skills can support GCSB's mission.
           </p>
@@ -74,17 +74,17 @@ const Contact = () => {
                     viewport={{ once: true }}
                     className="flex items-center space-x-4"
                   >
-                    <div className="text-blue-200">
+                    <div className="text-gray-200">
                       {item.icon}
                     </div>
                     <div>
-                      <p className="font-semibold text-blue-100">
+                      <p className="font-semibold text-gray-100">
                         {item.label}
                       </p>
                       {item.href ? (
                         <a
                           href={item.href}
-                          className="text-white hover:text-blue-200 transition-colors"
+                          className="text-white hover:text-gray-200 transition-colors"
                         >
                           {item.value}
                         </a>
@@ -97,11 +97,11 @@ const Contact = () => {
               </div>
             </div>
 
-            <div className="bg-blue-800 bg-opacity-50 p-6 rounded-lg">
+            <div className="bg-gray-800 bg-opacity-50 p-6 rounded-lg">
               <h4 className="text-xl font-bold mb-4">
                 Professional Interest
               </h4>
-              <p className="text-blue-100 leading-relaxed">
+              <p className="text-gray-100 leading-relaxed">
                 I am specifically interested in the <strong>System Engineer – Level 1</strong> 
                 position at GCSB and welcome opportunities to discuss how my technical 
                 background in infrastructure management and security can contribute to 
@@ -117,31 +117,31 @@ const Contact = () => {
             viewport={{ once: true }}
             className="space-y-8"
           >
-            <div className="bg-white text-gcsb-blue p-8 rounded-lg">
+            <div className="bg-white text-black p-8 rounded-lg">
               <h3 className="text-2xl font-bold mb-6">
                 Why Choose Me for GCSB?
               </h3>
               <ul className="space-y-4">
                 <li className="flex items-start">
-                  <span className="text-gcsb-blue mr-3 mt-1">•</span>
+                  <span className="text-black mr-3 mt-1">•</span>
                   <div>
                     <strong>Technical Excellence:</strong> Comprehensive skills in Windows/Linux administration, automation, and security
                   </div>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-gcsb-blue mr-3 mt-1">•</span>
+                  <span className="text-black mr-3 mt-1">•</span>
                   <div>
                     <strong>Security Focus:</strong> Deep understanding of cybersecurity principles and threat mitigation
                   </div>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-gcsb-blue mr-3 mt-1">•</span>
+                  <span className="text-black mr-3 mt-1">•</span>
                   <div>
                     <strong>Public Service Commitment:</strong> Genuine passion for supporting New Zealand's national security
                   </div>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-gcsb-blue mr-3 mt-1">•</span>
+                  <span className="text-black mr-3 mt-1">•</span>
                   <div>
                     <strong>Continuous Learning:</strong> Dedicated to staying current with evolving technologies and threats
                   </div>
@@ -154,7 +154,7 @@ const Contact = () => {
                 href="mailto:letisia.pangataa@example.com"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="bg-white text-gcsb-blue px-8 py-4 rounded-lg font-semibold hover:bg-blue-50 transition-colors inline-flex items-center"
+                className="bg-white text-black px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors inline-flex items-center"
               >
                 <Mail className="mr-2 h-5 w-5" />
                 Contact Me Today

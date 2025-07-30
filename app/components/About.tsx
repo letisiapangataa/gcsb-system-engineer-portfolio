@@ -28,7 +28,7 @@ const About = () => {
   ]
 
   return (
-    <section id="about" className="py-20 bg-gray-50">
+    <section id="about" className="py-20 bg-light-gray">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -37,7 +37,7 @@ const About = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-gcsb-blue mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold text-black mb-6">
             About Me
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
@@ -54,7 +54,7 @@ const About = () => {
             viewport={{ once: true }}
             className="space-y-6"
           >
-            <h3 className="text-2xl font-bold text-gcsb-blue">
+            <h3 className="text-2xl font-bold text-black">
               My Mission
             </h3>
             <p className="text-gray-700 leading-relaxed">
@@ -68,7 +68,7 @@ const About = () => {
               intelligence operations, and I'm excited to bring my skills in system 
               administration, automation, and monitoring to support this critical work.
             </p>
-            <div className="bg-gcsb-blue text-white p-6 rounded-lg">
+            <div className="bg-black text-white p-6 rounded-lg">
               <p className="font-semibold mb-2">Core Values:</p>
               <ul className="space-y-1">
                 <li>• Commitment to national security</li>
@@ -92,8 +92,8 @@ const About = () => {
                 whileHover={{ scale: 1.05 }}
                 className="bg-white p-6 rounded-lg shadow-lg card-hover"
               >
-                <div className="text-gcsb-blue mb-4">{item.icon}</div>
-                <h4 className="text-lg font-semibold text-gcsb-blue mb-2">
+                <div className="text-black mb-4">{item.icon}</div>
+                <h4 className="text-lg font-semibold text-black mb-2">
                   {item.title}
                 </h4>
                 <p className="text-gray-600 text-sm leading-relaxed">
@@ -111,7 +111,7 @@ const About = () => {
           viewport={{ once: true }}
           className="bg-white rounded-lg shadow-lg p-8"
         >
-          <h3 className="text-2xl font-bold text-gcsb-blue mb-6 text-center">
+          <h3 className="text-2xl font-bold text-black mb-6 text-center">
             Why GCSB?
           </h3>
           <p className="text-gray-700 leading-relaxed text-center max-w-4xl mx-auto">

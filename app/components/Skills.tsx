@@ -84,7 +84,7 @@ const Skills = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-gcsb-blue mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold text-black mb-6">
             Technical Skills
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
@@ -104,10 +104,10 @@ const Skills = () => {
               className="bg-white rounded-lg shadow-lg p-6 card-hover"
             >
               <div className="flex items-center mb-6">
-                <div className="text-gcsb-blue mr-3">
+                <div className="text-black mr-3">
                   {category.icon}
                 </div>
-                <h3 className="text-xl font-bold text-gcsb-blue">
+                <h3 className="text-xl font-bold text-black">
                   {category.title}
                 </h3>
               </div>
@@ -119,7 +119,7 @@ const Skills = () => {
                       <span className="text-gray-700 font-medium">
                         {skill.name}
                       </span>
-                      <span className="text-gcsb-blue font-semibold">
+                      <span className="text-black font-semibold">
                         {skill.level}%
                       </span>
                     </div>
@@ -129,7 +129,7 @@ const Skills = () => {
                         whileInView={{ width: `${skill.level}%` }}
                         transition={{ duration: 1, delay: i * 0.1 }}
                         viewport={{ once: true }}
-                        className="bg-gradient-to-r from-gcsb-blue to-gcsb-light h-2 rounded-full"
+                        className="bg-gradient-to-r from-black to-gray-600 h-2 rounded-full"
                       />
                     </div>
                   </div>
@@ -146,7 +146,7 @@ const Skills = () => {
           viewport={{ once: true }}
           className="bg-white rounded-lg shadow-lg p-8"
         >
-          <h3 className="text-2xl font-bold text-gcsb-blue mb-6 text-center">
+          <h3 className="text-2xl font-bold text-black mb-6 text-center">
             Certifications & Learning Path
           </h3>
           <div className="grid md:grid-cols-2 gap-8">
@@ -155,7 +155,7 @@ const Skills = () => {
               <ul className="space-y-2">
                 {certifications.map((cert, index) => (
                   <li key={index} className="flex items-center">
-                    <span className="text-gcsb-blue mr-2">✓</span>
+                    <span className="text-black mr-2">✓</span>
                     {cert}
                   </li>
                 ))}

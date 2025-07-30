@@ -17,7 +17,7 @@ const Footer = () => {
             viewport={{ once: true }}
           >
             <div className="flex items-center mb-4">
-              <Shield className="h-8 w-8 text-blue-400 mr-3" />
+              <Shield className="h-8 w-8 text-gray-400 mr-3" />
               <h3 className="text-xl font-bold">Letisia Pangataa</h3>
             </div>
             <p className="text-gray-300 leading-relaxed">
@@ -35,27 +35,27 @@ const Footer = () => {
             <h3 className="text-xl font-bold mb-4">Quick Links</h3>
             <ul className="space-y-2">
               <li>
-                <a href="#about" className="text-gray-300 hover:text-blue-400 transition-colors">
+                <a href="#about" className="text-gray-300 hover:text-gray-400 transition-colors">
                   About Me
                 </a>
               </li>
               <li>
-                <a href="#projects" className="text-gray-300 hover:text-blue-400 transition-colors">
+                <a href="#projects" className="text-gray-300 hover:text-gray-400 transition-colors">
                   Technical Projects
                 </a>
               </li>
               <li>
-                <a href="#skills" className="text-gray-300 hover:text-blue-400 transition-colors">
+                <a href="#skills" className="text-gray-300 hover:text-gray-400 transition-colors">
                   Skills & Expertise
                 </a>
               </li>
               <li>
-                <a href="#certifications" className="text-gray-300 hover:text-blue-400 transition-colors">
+                <a href="#certifications" className="text-gray-300 hover:text-gray-400 transition-colors">
                   Certifications
                 </a>
               </li>
               <li>
-                <a href="#contact" className="text-gray-300 hover:text-blue-400 transition-colors">
+                <a href="#contact" className="text-gray-300 hover:text-gray-400 transition-colors">
                   Contact
                 </a>
               </li>
@@ -75,7 +75,7 @@ const Footer = () => {
                   href="https://www.gcsb.govt.nz/" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="text-gray-300 hover:text-blue-400 transition-colors flex items-center"
+                  className="text-gray-300 hover:text-gray-100 transition-colors flex items-center"
                 >
                   GCSB Official Website
                   <ExternalLink className="ml-1 h-4 w-4" />
@@ -86,7 +86,7 @@ const Footer = () => {
                   href="https://www.gcsb.govt.nz/careers/" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="text-gray-300 hover:text-blue-400 transition-colors flex items-center"
+                  className="text-gray-300 hover:text-gray-100 transition-colors flex items-center"
                 >
                   GCSB Careers
                   <ExternalLink className="ml-1 h-4 w-4" />
@@ -97,7 +97,7 @@ const Footer = () => {
                   href="https://www.ncsc.govt.nz/" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="text-gray-300 hover:text-blue-400 transition-colors flex items-center"
+                  className="text-gray-300 hover:text-gray-100 transition-colors flex items-center"
                 >
                   NCSC New Zealand
                   <ExternalLink className="ml-1 h-4 w-4" />
@@ -127,9 +127,9 @@ const Footer = () => {
           
           <motion.div
             whileHover={{ scale: 1.02 }}
-            className="mt-6 bg-blue-900 bg-opacity-50 p-4 rounded-lg text-center"
+            className="mt-6 bg-gray-800 bg-opacity-50 p-4 rounded-lg text-center"
           >
-            <p className="text-blue-200 text-sm">
+            <p className="text-gray-200 text-sm">
               <strong>Security Notice:</strong> This portfolio demonstrates technical capabilities 
               relevant to cybersecurity and infrastructure management. All projects follow 
               security best practices and ethical guidelines.

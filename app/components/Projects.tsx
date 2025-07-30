@@ -77,7 +77,7 @@ const Projects = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-gcsb-blue mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold text-black mb-6">
             Technical Projects
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
@@ -98,10 +98,10 @@ const Projects = () => {
               className="bg-white border border-gray-200 rounded-lg shadow-lg p-6 card-hover"
             >
               <div className="flex items-center mb-4">
-                <div className="text-gcsb-blue mr-3">
+                <div className="text-black mr-3">
                   {project.icon}
                 </div>
-                <h3 className="text-xl font-bold text-gcsb-blue">
+                <h3 className="text-xl font-bold text-black">
                   {project.title}
                 </h3>
               </div>
@@ -115,7 +115,7 @@ const Projects = () => {
                 <ul className="text-sm text-gray-600 space-y-1">
                   {project.highlights.map((highlight, i) => (
                     <li key={i} className="flex items-start">
-                      <span className="text-gcsb-blue mr-2">•</span>
+                      <span className="text-black mr-2">•</span>
                       {highlight}
                     </li>
                   ))}
@@ -126,7 +126,7 @@ const Projects = () => {
                 {project.technologies.map((tech, i) => (
                   <span
                     key={i}
-                    className="bg-blue-100 text-gcsb-blue px-3 py-1 rounded-full text-sm font-medium"
+                    className="bg-gray-100 text-black px-3 py-1 rounded-full text-sm font-medium border border-gray-300"
                   >
                     {tech}
                   </span>
@@ -137,7 +137,7 @@ const Projects = () => {
                 <motion.button
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  className="text-gcsb-blue hover:text-blue-700 font-semibold flex items-center"
+                  className="text-black hover:text-gray-700 font-semibold flex items-center"
                 >
                   View Details
                   <ExternalLink className="ml-1 h-4 w-4" />

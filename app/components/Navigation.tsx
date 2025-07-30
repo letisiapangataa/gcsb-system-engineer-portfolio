@@ -38,8 +38,8 @@ const Navigation = () => {
             whileHover={{ scale: 1.05 }}
             className="flex items-center space-x-2"
           >
-            <Shield className={`h-8 w-8 ${scrolled ? 'text-gcsb-blue' : 'text-white'}`} />
-            <span className={`text-xl font-bold ${scrolled ? 'text-gcsb-blue' : 'text-white'}`}>
+            <Shield className={`h-8 w-8 ${scrolled ? 'text-black' : 'text-white'}`} />
+            <span className={`text-xl font-bold ${scrolled ? 'text-black' : 'text-white'}`}>
               GCSB Portfolio
             </span>
           </motion.div>
@@ -53,8 +53,8 @@ const Navigation = () => {
                 whileHover={{ scale: 1.1 }}
                 className={`transition-colors ${
                   scrolled 
-                    ? 'text-gray-700 hover:text-gcsb-blue' 
-                    : 'text-white hover:text-blue-200'
+                    ? 'text-gray-700 hover:text-black' 
+                    : 'text-white hover:text-gray-200'
                 }`}
               >
                 {item.label}
@@ -66,7 +66,7 @@ const Navigation = () => {
           <div className="md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className={scrolled ? 'text-gcsb-blue' : 'text-white'}
+              className={scrolled ? 'text-black' : 'text-white'}
             >
               {isOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
@@ -85,7 +85,7 @@ const Navigation = () => {
                 key={item.href}
                 href={item.href}
                 onClick={() => setIsOpen(false)}
-                className="block px-4 py-3 text-gray-700 hover:text-gcsb-blue border-b last:border-b-0"
+                className="block px-4 py-3 text-gray-700 hover:text-black border-b last:border-b-0"
               >
                 {item.label}
               </a>

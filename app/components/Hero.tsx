@@ -17,7 +17,7 @@ const Hero = () => {
           <h1 className="text-5xl md:text-7xl font-bold mb-6">
             Letisia Pangataa
           </h1>
-          <h2 className="text-2xl md:text-3xl font-light mb-4 text-blue-100">
+          <h2 className="text-2xl md:text-3xl font-light mb-4 text-gray-200">
             System Engineer | Infrastructure Specialist
           </h2>
           <div className="flex items-center justify-center mb-8">
@@ -30,7 +30,7 @@ const Hero = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="text-xl md:text-2xl mb-8 leading-relaxed text-blue-50"
+          className="text-xl md:text-2xl mb-8 leading-relaxed text-gray-100"
         >
           Applying for <strong>System Engineer – Level 1 / Kaipūkaha Pūnaha – Taumata 1</strong> at the 
           <strong> Government Communications Security Bureau (GCSB)</strong>
@@ -40,7 +40,7 @@ const Hero = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="text-lg mb-12 max-w-3xl mx-auto text-blue-50"
+          className="text-lg mb-12 max-w-3xl mx-auto text-gray-100"
         >
           Passionate about supporting Aotearoa New Zealand's national security through 
           infrastructure automation, system administration, and security-focused engineering.
@@ -56,7 +56,7 @@ const Hero = () => {
             href="#about"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="bg-white text-gcsb-blue px-8 py-4 rounded-lg font-semibold hover:bg-blue-50 transition-colors inline-flex items-center"
+            className="bg-white text-black px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors inline-flex items-center"
           >
             View My Work
             <ChevronDown className="ml-2 h-5 w-5" />
@@ -67,7 +67,7 @@ const Hero = () => {
             target="_blank"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-gcsb-blue transition-colors inline-flex items-center"
+            className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-black transition-colors inline-flex items-center"
           >
             <Download className="mr-2 h-5 w-5" />
             Download CV
@@ -86,7 +86,7 @@ const Hero = () => {
             repeat: Infinity,
             ease: "linear"
           }}
-          className="absolute -top-1/2 -right-1/2 w-96 h-96 border border-blue-300 opacity-10 rounded-full"
+          className="absolute -top-1/2 -right-1/2 w-96 h-96 border border-gray-400 opacity-20 rounded-full"
         />
         <motion.div
           animate={{
@@ -97,7 +97,7 @@ const Hero = () => {
             repeat: Infinity,
             ease: "linear"
           }}
-          className="absolute -bottom-1/2 -left-1/2 w-96 h-96 border border-blue-300 opacity-10 rounded-full"
+          className="absolute -bottom-1/2 -left-1/2 w-96 h-96 border border-gray-400 opacity-20 rounded-full"
         />
       </div>
     </section>
