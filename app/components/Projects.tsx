@@ -48,21 +48,21 @@ const Projects = () => {
       icon: <Monitor className="h-8 w-8" />,
       highlights: [
         "Real-time performance monitoring",
-        "Automated alert systems",
-        "Custom metrics collection",
-        "Historical trend analysis"
+        "Custom alerting workflows",
+        "Historical data analysis",
+        "Security event correlation"
       ]
     },
     {
       title: "Database Administration Lab",
-      description: "SQL Server and MySQL administration with backup strategies, performance tuning, and security hardening.",
+      description: "SQL Server and MySQL administration lab focusing on security, backup strategies, and performance optimization.",
       technologies: ["SQL Server", "MySQL", "T-SQL", "Performance Tuning"],
       icon: <Database className="h-8 w-8" />,
       highlights: [
-        "Automated backup and restore procedures",
-        "Query optimization and indexing",
-        "Security auditing and compliance",
-        "High availability configuration"
+        "Database security hardening",
+        "Automated backup solutions",
+        "Query optimization techniques",
+        "Disaster recovery testing"
       ]
     }
   ]
@@ -78,15 +78,15 @@ const Projects = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold text-black mb-6">
-            Technical Projects
+            Technical / Systems Projects
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            Practical demonstrations of system engineering skills through lab environments 
-            and real-world scenarios relevant to GCSB operations.
+          <p className="text-xl text-black max-w-3xl mx-auto leading-relaxed">
+            Hands on and practical infrastructure and security projects showcasing practical skills 
+            relevant to systems engineering at GCSB.
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid lg:grid-cols-2 gap-8">
           {projects.map((project, index) => (
             <motion.div
               key={index}
@@ -95,81 +95,50 @@ const Projects = () => {
               transition={{ duration: 0.6, delay: index * 0.1 }}
               viewport={{ once: true }}
               whileHover={{ scale: 1.02 }}
-              className="bg-white border border-gray-200 rounded-lg shadow-lg p-6 card-hover"
+              className="bg-white border border-black rounded-lg p-8 card-hover"
             >
-              <div className="flex items-center mb-4">
-                <div className="text-black mr-3">
+              <div className="flex items-center mb-6">
+                <div className="text-black mr-4">
                   {project.icon}
                 </div>
-                <h3 className="text-xl font-bold text-black">
+                <h3 className="text-2xl font-bold text-black">
                   {project.title}
                 </h3>
               </div>
 
-              <p className="text-gray-600 mb-4 leading-relaxed">
+              <p className="text-black mb-6 leading-relaxed">
                 {project.description}
               </p>
 
-              <div className="mb-4">
-                <h4 className="font-semibold text-gray-800 mb-2">Key Highlights:</h4>
-                <ul className="text-sm text-gray-600 space-y-1">
+              <div className="mb-6">
+                <h4 className="font-semibold text-black mb-3">Key Highlights:</h4>
+                <ul className="space-y-2">
                   {project.highlights.map((highlight, i) => (
                     <li key={i} className="flex items-start">
                       <span className="text-black mr-2">•</span>
-                      {highlight}
+                      <span className="text-black text-sm">{highlight}</span>
                     </li>
                   ))}
                 </ul>
               </div>
 
-              <div className="flex flex-wrap gap-2 mb-4">
-                {project.technologies.map((tech, i) => (
-                  <span
-                    key={i}
-                    className="bg-gray-100 text-black px-3 py-1 rounded-full text-sm font-medium border border-gray-300"
-                  >
-                    {tech}
-                  </span>
-                ))}
-              </div>
-
-              <div className="flex justify-between items-center">
-                <motion.button
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                  className="text-black hover:text-gray-700 font-semibold flex items-center"
-                >
-                  View Details
-                  <ExternalLink className="ml-1 h-4 w-4" />
-                </motion.button>
-                <motion.button
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                  className="text-gray-500 hover:text-gray-700"
-                >
-                  <Github className="h-5 w-5" />
-                </motion.button>
+              <div className="border-t border-black pt-6">
+                <h4 className="font-semibold text-black mb-3">Technologies:</h4>
+                <div className="flex flex-wrap gap-2">
+                  {project.technologies.map((tech, i) => (
+                    <span
+                      key={i}
+                      className="bg-black text-white px-3 py-1 rounded-full text-sm"
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                </div>
               </div>
             </motion.div>
           ))}
         </div>
 
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          viewport={{ once: true }}
-          className="mt-16 text-center"
-        >
-          <div className="bg-gcsb-blue text-white p-8 rounded-lg">
-            <h3 className="text-2xl font-bold mb-4">Security-First Approach</h3>
-            <p className="text-blue-100 leading-relaxed max-w-3xl mx-auto">
-              All projects implement security best practices including least privilege access, 
-              regular security auditing, encrypted communications, and comprehensive logging. 
-              This approach aligns with GCSB's mission-critical security requirements.
-            </p>
-          </div>
-        </motion.div>
       </div>
     </section>
   )

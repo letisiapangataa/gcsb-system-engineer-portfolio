@@ -75,7 +75,7 @@ const Skills = () => {
   ]
 
   return (
-    <section id="skills" className="py-20 bg-gray-50">
+    <section id="skills" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -87,7 +87,7 @@ const Skills = () => {
           <h2 className="text-4xl md:text-5xl font-bold text-black mb-6">
             Technical Skills
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl text-black max-w-3xl mx-auto leading-relaxed">
             Comprehensive skill set in system administration, security, and infrastructure 
             management aligned with GCSB's technical requirements.
           </p>
@@ -101,7 +101,7 @@ const Skills = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
               viewport={{ once: true }}
-              className="bg-white rounded-lg shadow-lg p-6 card-hover"
+              className="bg-white rounded-lg border border-black p-6 card-hover"
             >
               <div className="flex items-center mb-6">
                 <div className="text-black mr-3">
@@ -116,20 +116,20 @@ const Skills = () => {
                 {category.skills.map((skill, i) => (
                   <div key={i}>
                     <div className="flex justify-between items-center mb-2">
-                      <span className="text-gray-700 font-medium">
+                      <span className="text-black font-medium">
                         {skill.name}
                       </span>
                       <span className="text-black font-semibold">
                         {skill.level}%
                       </span>
                     </div>
-                    <div className="w-full bg-gray-200 rounded-full h-2">
+                    <div className="w-full bg-white border border-black rounded-full h-2">
                       <motion.div
                         initial={{ width: 0 }}
                         whileInView={{ width: `${skill.level}%` }}
                         transition={{ duration: 1, delay: i * 0.1 }}
                         viewport={{ once: true }}
-                        className="bg-gradient-to-r from-black to-gray-600 h-2 rounded-full"
+                        className="bg-black h-2 rounded-full"
                       />
                     </div>
                   </div>
@@ -144,7 +144,7 @@ const Skills = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="bg-white rounded-lg shadow-lg p-8"
+          className="bg-white rounded-lg border border-gray-200 p-8"
         >
           <h3 className="text-2xl font-bold text-black mb-6 text-center">
             Certifications & Learning Path

@@ -1,0 +1,13 @@
+INSTRUCTION: Save the spy image you provided as "spy-icon.png" in the public folder
+
+To complete the image replacement:
+1. Save the spy image you attached as "spy-icon.png" 
+2. Place it in the public folder: c:\Users\lpangataa\OneDrive - Microsoft\Desktop\cv-tings\gcsb-system-engineer-portfolio\public\spy-icon.png
+3. The Hero component has already been updated to use "/spy-icon.png" instead of "/spy-icon.svg"
+
+The image will automatically appear in the hero section with the same responsive sizing:
+- Mobile: 128x128px (w-32 h-32)
+- Small screens: 160x160px (sm:w-40 sm:h-40) 
+- Medium screens: 192x192px (md:w-48 md:h-48)
+- Large screens: 224x224px (lg:w-56 lg:h-56)
+- Extra large: 256x256px (xl:w-64 xl:h-64)

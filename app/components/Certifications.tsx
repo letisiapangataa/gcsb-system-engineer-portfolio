@@ -52,7 +52,7 @@ const Certifications = () => {
     },
     {
       title: "Network Security Lab",
-      description: "Complete network infrastructure with security controls implementation",
+      description: "VLAN segmentation and firewall configuration demonstration",
       date: "2024"
     }
   ]
@@ -70,14 +70,13 @@ const Certifications = () => {
           <h2 className="text-4xl md:text-5xl font-bold text-black mb-6">
             Certifications & Achievements
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            Professional development pathway aligned with cybersecurity and infrastructure 
-            management excellence required for national security operations.
+          <p className="text-xl text-black max-w-3xl mx-auto leading-relaxed">
+            Professional development pathway focused on cybersecurity, infrastructure, 
+            and skills directly relevant to GCSB's mission.
           </p>
         </motion.div>
 
         <div className="grid lg:grid-cols-2 gap-12 mb-16">
-          {/* Certifications */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -95,37 +94,35 @@ const Certifications = () => {
                   key={index}
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.6, delay: index * 0.1 }}
+                  transition={{ duration: 0.5, delay: index * 0.1 }}
                   viewport={{ once: true }}
-                  className="bg-gray-50 rounded-lg p-6 card-hover"
+                  className="bg-white border border-black rounded-lg p-6 card-hover"
                 >
                   <div className="flex justify-between items-start mb-4">
-                    <div className="flex-1">
+                    <div>
                       <h4 className="text-lg font-bold text-black mb-1">
                         {cert.title}
                       </h4>
-                      <p className="text-gray-600 mb-2">{cert.issuer}</p>
-                      <div className="flex items-center mb-3">
-                        <Calendar className="h-4 w-4 text-gray-500 mr-2" />
-                        <span className="text-gray-600">{cert.date}</span>
-                      </div>
+                      <p className="text-black text-sm">
+                        {cert.issuer} • {cert.date}
+                      </p>
                     </div>
-                    <span className={`px-3 py-1 rounded-full text-sm font-medium ${
+                    <span className={`px-3 py-1 rounded-full text-xs font-semibold ${
                       cert.status === 'In Progress' 
-                        ? 'bg-yellow-100 text-yellow-800' 
-                        : 'bg-gray-100 text-gray-800'
+                        ? 'bg-black text-white' 
+                        : 'bg-white border border-black text-black'
                     }`}>
                       {cert.status}
                     </span>
                   </div>
                   
-                  <p className="text-gray-700 mb-3 leading-relaxed">
+                  <p className="text-black text-sm mb-3 leading-relaxed">
                     {cert.description}
                   </p>
                   
-                  <div className="bg-black bg-opacity-10 p-3 rounded">
-                    <p className="text-black font-medium text-sm">
-                      GCSB Relevance: {cert.relevance}
+                  <div className="bg-white border border-black rounded p-3">
+                    <p className="text-black text-xs">
+                      <strong>GCSB Relevance:</strong> {cert.relevance}
                     </p>
                   </div>
                 </motion.div>
@@ -133,14 +130,14 @@ const Certifications = () => {
             </div>
           </motion.div>
 
-          {/* Achievements */}
           <motion.div
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            <h3 className="text-2xl font-bold text-black mb-8">
+            <h3 className="text-2xl font-bold text-black mb-8 flex items-center">
+              <ExternalLink className="mr-3 h-8 w-8" />
               Technical Achievements
             </h3>
             
@@ -150,81 +147,51 @@ const Certifications = () => {
                   key={index}
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.6, delay: index * 0.1 }}
+                  transition={{ duration: 0.5, delay: index * 0.1 }}
                   viewport={{ once: true }}
-                  className="bg-gray-50 rounded-lg p-6"
+                  className="bg-white border border-black rounded-lg p-6 card-hover"
                 >
                   <div className="flex justify-between items-start mb-3">
                     <h4 className="text-lg font-bold text-black">
                       {achievement.title}
                     </h4>
-                    <span className="text-gray-500 text-sm">
+                    <span className="text-black text-sm flex items-center">
+                      <Calendar className="h-4 w-4 mr-1" />
                       {achievement.date}
                     </span>
                   </div>
-                  <p className="text-gray-700 leading-relaxed">
+                  <p className="text-black text-sm leading-relaxed">
                     {achievement.description}
                   </p>
                 </motion.div>
               ))}
             </div>
 
-            {/* CV Download */}
             <motion.div
               whileHover={{ scale: 1.02 }}
-              className="bg-black text-white p-6 rounded-lg"
+              className="bg-black text-white rounded-lg p-6 text-center"
             >
-              <h4 className="text-xl font-bold mb-3">
-                Complete Professional Profile
-              </h4>
-              <p className="text-gray-200 mb-4">
-                Download my comprehensive CV for detailed information about my 
-                technical background, projects, and qualifications.
+              <h4 className="text-lg font-bold mb-3">Certification Timeline</h4>
+              <p className="text-sm mb-4">
+                Strategic certification pathway aligned with GCSB technical requirements
               </p>
-              <div className="flex flex-col sm:flex-row gap-3">
-                <motion.a
-                  href="/resume.pdf"
-                  target="_blank"
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                  className="bg-white text-black px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors inline-flex items-center justify-center"
-                >
-                  <Download className="mr-2 h-5 w-5" />
-                  Download CV (PDF)
-                </motion.a>
-                <motion.a
-                  href="/portfolio-summary.pdf"
-                  target="_blank"
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                  className="border-2 border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-black transition-colors inline-flex items-center justify-center"
-                >
-                  <ExternalLink className="mr-2 h-5 w-5" />
-                  Portfolio Summary
-                </motion.a>
+              <div className="space-y-2 text-sm">
+                <div className="flex justify-between">
+                  <span>CCNAv7 Completion:</span>
+                  <span>Q1 2024</span>
+                </div>
+                <div className="flex justify-between">
+                  <span>CompTIA Security+:</span>
+                  <span>Q2 2024</span>
+                </div>
+                <div className="flex justify-between">
+                  <span>Azure Fundamentals:</span>
+                  <span>Q3 2024</span>
+                </div>
               </div>
             </motion.div>
           </motion.div>
         </div>
-
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          viewport={{ once: true }}
-          className="text-center"
-        >
-          <div className="bg-gray-50 p-8 rounded-lg">
-            <h3 className="text-2xl font-bold text-black mb-4">
-              Continuous Professional Development
-            </h3>
-            <p className="text-gray-700 leading-relaxed max-w-3xl mx-auto">
-              Committed to ongoing learning and professional development to stay current with 
-              evolving cybersecurity threats, infrastructure technologies, and best practices 
-              essential for supporting New Zealand's national security objectives.
-            </p>
-          </div>
-        </motion.div>
       </div>
     </section>
   )

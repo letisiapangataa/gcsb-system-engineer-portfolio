@@ -2,9 +2,13 @@
 
 import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
-import { Menu, X, Shield } from 'lucide-react'
+import { Menu, X, Shield, LogOut } from 'lucide-react'
 
-const Navigation = () => {
+interface NavigationProps {
+  onLogout?: () => void
+}
+
+const Navigation = ({ onLogout }: NavigationProps) => {
   const [isOpen, setIsOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
 
@@ -29,7 +33,7 @@ const Navigation = () => {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-        scrolled ? 'bg-white shadow-lg' : 'bg-transparent'
+        scrolled ? 'bg-white border-b border-gray-200' : 'bg-white border-b border-gray-200'
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -38,35 +42,43 @@ const Navigation = () => {
             whileHover={{ scale: 1.05 }}
             className="flex items-center space-x-2"
           >
-            <Shield className={`h-8 w-8 ${scrolled ? 'text-black' : 'text-white'}`} />
-            <span className={`text-xl font-bold ${scrolled ? 'text-black' : 'text-white'}`}>
+            <span className="text-xl font-bold text-black">
               GCSB Portfolio
             </span>
           </motion.div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex space-x-8">
+          <div className="hidden md:flex items-center space-x-8">
             {navItems.map((item) => (
               <motion.a
                 key={item.href}
                 href={item.href}
                 whileHover={{ scale: 1.1 }}
-                className={`transition-colors ${
-                  scrolled 
-                    ? 'text-gray-700 hover:text-black' 
-                    : 'text-white hover:text-gray-200'
-                }`}
+                className="text-black hover:text-gray-600 transition-colors"
               >
                 {item.label}
               </motion.a>
             ))}
+            
+            {/* Logout Button */}
+            {onLogout && (
+              <motion.button
+                onClick={onLogout}
+                whileHover={{ scale: 1.1 }}
+                className="flex items-center space-x-1 text-black hover:text-red-600 transition-colors"
+                title="Logout"
+              >
+                <LogOut className="h-4 w-4" />
+                <span className="text-sm">Logout</span>
+              </motion.button>
+            )}
           </div>
 
           {/* Mobile Menu Button */}
           <div className="md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className={scrolled ? 'text-black' : 'text-white'}
+              className="text-black"
             >
               {isOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
@@ -78,18 +90,32 @@ const Navigation = () => {
           <motion.div
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="md:hidden bg-white shadow-lg rounded-lg mb-4"
+            className="md:hidden bg-white border border-gray-200 rounded-lg mb-4"
           >
             {navItems.map((item) => (
               <a
                 key={item.href}
                 href={item.href}
                 onClick={() => setIsOpen(false)}
-                className="block px-4 py-3 text-gray-700 hover:text-black border-b last:border-b-0"
+                className="block px-4 py-3 text-black hover:text-gray-600 border-b last:border-b-0"
               >
                 {item.label}
               </a>
             ))}
+            
+            {/* Mobile Logout Button */}
+            {onLogout && (
+              <button
+                onClick={() => {
+                  setIsOpen(false)
+                  onLogout()
+                }}
+                className="flex items-center space-x-2 w-full px-4 py-3 text-red-600 hover:text-red-700 hover:bg-red-50"
+              >
+                <LogOut className="h-4 w-4" />
+                <span>Logout</span>
+              </button>
+            )}
           </motion.div>
         )}
       </div>

@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="black">
+  <!-- Hat brim -->
+  <ellipse cx="256" cy="120" rx="180" ry="40" fill="black"/>
+  
+  <!-- Hat crown -->
+  <path d="M100 80 C100 40, 140 20, 256 20 C372 20, 412 40, 412 80 L412 120 C412 140, 380 160, 256 160 C132 160, 100 140, 100 120 Z" fill="black"/>
+  
+  <!-- Hat band -->
+  <ellipse cx="256" cy="115" rx="160" ry="15" fill="white"/>
+  
+  <!-- Head/Face -->
+  <ellipse cx="256" cy="240" rx="90" ry="80" fill="white"/>
+  
+  <!-- Sunglasses left lens -->
+  <ellipse cx="220" cy="220" rx="35" ry="25" fill="black"/>
+  
+  <!-- Sunglasses right lens -->
+  <ellipse cx="292" cy="220" rx="35" ry="25" fill="black"/>
+  
+  <!-- Sunglasses bridge -->
+  <rect x="250" y="210" width="12" height="8" fill="black"/>
+  
+  <!-- Sunglasses frame -->
+  <ellipse cx="220" cy="220" rx="38" ry="28" fill="none" stroke="black" stroke-width="3"/>
+  <ellipse cx="292" cy="220" rx="38" ry="28" fill="none" stroke="black" stroke-width="3"/>
+  
+  <!-- Nose -->
+  <ellipse cx="256" cy="255" rx="6" ry="10" fill="black"/>
+  
+  <!-- Mustache -->
+  <ellipse cx="256" cy="275" rx="20" ry="6" fill="black"/>
+  
+  <!-- Suit collar -->
+  <path d="M180 320 L256 300 L332 320 L332 400 L280 380 L256 390 L232 380 L180 400 Z" fill="black"/>
+  
+  <!-- Shirt -->
+  <rect x="230" y="300" width="52" height="80" fill="white"/>
+  
+  <!-- Tie -->
+  <polygon points="248,300 264,300 260,380 252,380" fill="black"/>
+  
+  <!-- Suit jacket -->
+  <path d="M160 350 C160 320, 180 300, 220 300 L292 300 C332 300, 352 320, 352 350 L352 500 L160 500 Z" fill="black"/>
+  
+  <!-- Suit lapels -->
+  <path d="M180 320 L220 300 L240 350 L200 370 Z" fill="black"/>
+  <path d="M332 320 L292 300 L272 350 L312 370 Z" fill="black"/>
+</svg>

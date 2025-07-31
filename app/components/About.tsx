@@ -28,7 +28,7 @@ const About = () => {
   ]
 
   return (
-    <section id="about" className="py-20 bg-light-gray">
+    <section id="about" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -38,11 +38,11 @@ const About = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold text-black mb-6">
-            About Me
+            Ko au tēnei. This is me / I am.
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            A dedicated systems engineer passionate about supporting Aotearoa New Zealand's 
-            national security through technical excellence and innovation.
+          <p className="text-xl text-black max-w-3xl mx-auto leading-relaxed">
+            IT Professional passionate about supporting Aotearoa, New Zealand's 
+            National Security through technical excellence and innovation.
           </p>
         </motion.div>
 
@@ -57,24 +57,21 @@ const About = () => {
             <h3 className="text-2xl font-bold text-black">
               My Mission
             </h3>
-            <p className="text-gray-700 leading-relaxed">
-              As someone deeply committed to public service, I am driven by the opportunity 
-              to contribute to New Zealand's national security through technology. My technical 
-              background in infrastructure management, combined with a strong understanding of 
-              security principles, positions me to make meaningful contributions to GCSB's mission.
+            <p className="text-black leading-relaxed">
+               IT Graduate with a strong technical foundation in cloud-native architecture, infrastructure management, and cybersecurity, I am motivated by the opportunity to contribute meaningfully to New Zealand’s national security through the delivery of secure and resilient technology systems. </p>
+               <p className="text-black leading-relaxed">
+               My experience at Microsoft New Zealand, supporting enterprise and public sector clients, has equipped me with the capability to align technical solutions with strategic objectives in high-stakes environments.
             </p>
-            <p className="text-gray-700 leading-relaxed">
-              I believe that robust, secure infrastructure is the foundation of effective 
-              intelligence operations, and I'm excited to bring my skills in system 
-              administration, automation, and monitoring to support this critical work.
+            <p className="text-black leading-relaxed">
+              I am confident that my skills in system administration, automation using PowerShell, and the application of security best practices position me to support the GCSB’s mission. I view robust and secure infrastructure as essential to the success of intelligence operations, and I am committed to upholding the principles of integrity, reliability, and continuous improvement in this critical area.
             </p>
             <div className="bg-black text-white p-6 rounded-lg">
               <p className="font-semibold mb-2">Core Values:</p>
               <ul className="space-y-1">
-                <li>• Commitment to national security</li>
-                <li>• Technical excellence and continuous learning</li>
-                <li>• Security-first mindset in all operations</li>
-                <li>• Collaborative and professional approach</li>
+                <li>• Commitment to National Security</li>
+                <li>• Technical Excellence and Continuous Learning</li>
+                <li>• Security-first mindset in All Operations</li>
+                <li>• Collaborative and Professional Approach</li>
               </ul>
             </div>
           </motion.div>
@@ -90,13 +87,13 @@ const About = () => {
               <motion.div
                 key={index}
                 whileHover={{ scale: 1.05 }}
-                className="bg-white p-6 rounded-lg shadow-lg card-hover"
+                className="bg-white p-6 rounded-lg border border-black card-hover"
               >
                 <div className="text-black mb-4">{item.icon}</div>
                 <h4 className="text-lg font-semibold text-black mb-2">
                   {item.title}
                 </h4>
-                <p className="text-gray-600 text-sm leading-relaxed">
+                <p className="text-black text-sm leading-relaxed">
                   {item.description}
                 </p>
               </motion.div>
@@ -109,18 +106,17 @@ const About = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="bg-white rounded-lg shadow-lg p-8"
+          className="bg-white rounded-lg border border-black p-8"
         >
           <h3 className="text-2xl font-bold text-black mb-6 text-center">
             Why GCSB?
           </h3>
-          <p className="text-gray-700 leading-relaxed text-center max-w-4xl mx-auto">
-            The Government Communications Security Bureau represents the pinnacle of New Zealand's 
-            cybersecurity and intelligence capabilities. I am drawn to the opportunity to apply my 
-            technical skills in infrastructure management, automation, and security to support the 
-            Bureau's vital mission of protecting our nation's interests in an increasingly complex 
-            digital landscape.
-          </p>
+          <ul className="list-disc list-inside text-black text-left max-w-3xl mx-auto space-y-2">
+            <li>Opportunity to contribute to national security through technical excellence.</li>
+            <li>Apply automation and security best practices in mission-critical environments.</li>
+            <li>Collaborate with experts dedicated to protecting New Zealand.</li>
+            <li>Support resilient and secure infrastructure for intelligence operations.</li>
+          </ul>
         </motion.div>
       </div>
     </section>

@@ -8,14 +8,13 @@ const Contact = () => {
     {
       icon: <Mail className="h-6 w-6" />,
       label: "Email",
-      value: "letisia.pangataa@example.com",
-      href: "mailto:letisia.pangataa@example.com"
+      value: "lpangataa@outlook.com",
+      href: "mailto:lpangataa@outlook.com"
     },
     {
       icon: <Phone className="h-6 w-6" />,
       label: "Phone",
-      value: "+64 XXX XXX XXX",
-      href: "tel:+64XXXXXXXXX"
+      value: "+64 027 701 6376",
     },
     {
       icon: <MapPin className="h-6 w-6" />,
@@ -26,13 +25,13 @@ const Contact = () => {
     {
       icon: <Linkedin className="h-6 w-6" />,
       label: "LinkedIn",
-      value: "linkedin.com/in/letisia-pangataa",
-      href: "https://linkedin.com/in/letisia-pangataa"
+      value: "https://www.linkedin.com/in/letisiapangataa/",
+      href: "https://www.linkedin.com/in/letisiapangataa/"
     }
   ]
 
   return (
-    <section id="contact" className="py-20 bg-black text-white">
+    <section id="contact" className="py-20 bg-white text-black">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -44,8 +43,8 @@ const Contact = () => {
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
             Get In Touch
           </h2>
-          <p className="text-xl text-gray-100 max-w-3xl mx-auto leading-relaxed">
-            Ready to contribute to New Zealand's national security through technical excellence. 
+          <p className="text-xl text-black max-w-3xl mx-auto leading-relaxed">
+            Ready to contribute to New Zealand's National Security through technical excellence. 
             Let's discuss how my skills can support GCSB's mission.
           </p>
         </motion.div>
@@ -60,7 +59,6 @@ const Contact = () => {
           >
             <div>
               <h3 className="text-2xl font-bold mb-6 flex items-center">
-                <Shield className="mr-3 h-8 w-8" />
                 Contact Information
               </h3>
               
@@ -74,22 +72,22 @@ const Contact = () => {
                     viewport={{ once: true }}
                     className="flex items-center space-x-4"
                   >
-                    <div className="text-gray-200">
+                    <div className="text-black">
                       {item.icon}
                     </div>
                     <div>
-                      <p className="font-semibold text-gray-100">
+                      <p className="font-semibold text-black">
                         {item.label}
                       </p>
                       {item.href ? (
                         <a
                           href={item.href}
-                          className="text-white hover:text-gray-200 transition-colors"
+                          className="text-black hover:text-gray-600 transition-colors"
                         >
                           {item.value}
                         </a>
                       ) : (
-                        <p className="text-white">{item.value}</p>
+                        <p className="text-black">{item.value}</p>
                       )}
                     </div>
                   </motion.div>
@@ -97,15 +95,15 @@ const Contact = () => {
               </div>
             </div>
 
-            <div className="bg-gray-800 bg-opacity-50 p-6 rounded-lg">
-              <h4 className="text-xl font-bold mb-4">
+            <div className="bg-white border border-black p-6 rounded-lg">
+              <h4 className="text-xl font-bold mb-4 text-black">
                 Professional Interest
               </h4>
-              <p className="text-gray-100 leading-relaxed">
-                I am specifically interested in the <strong>System Engineer – Level 1</strong> 
-                position at GCSB and welcome opportunities to discuss how my technical 
+              <p className="text-700 leading-relaxed">
+                Highly interested in the <strong>System Engineer – Level 1 </strong> 
+                role at GCSB and welcome further opportunities to discuss how my technical 
                 background in infrastructure management and security can contribute to 
-                New Zealand's cybersecurity objectives.
+                Aotearoa, New Zealand's Cybersecurity objectives.
               </p>
             </div>
           </motion.div>
@@ -117,7 +115,7 @@ const Contact = () => {
             viewport={{ once: true }}
             className="space-y-8"
           >
-            <div className="bg-white text-black p-8 rounded-lg">
+            <div className="bg-gray-100 text-black p-8 rounded-lg border border-gray-200">
               <h3 className="text-2xl font-bold mb-6">
                 Why Choose Me for GCSB?
               </h3>
@@ -147,18 +145,6 @@ const Contact = () => {
                   </div>
                 </li>
               </ul>
-            </div>
-
-            <div className="text-center">
-              <motion.a
-                href="mailto:letisia.pangataa@example.com"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="bg-white text-black px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors inline-flex items-center"
-              >
-                <Mail className="mr-2 h-5 w-5" />
-                Contact Me Today
-              </motion.a>
             </div>
           </motion.div>
         </div>
