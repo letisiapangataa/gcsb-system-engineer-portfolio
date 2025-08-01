@@ -5,8 +5,11 @@ import { ChevronDown, Download, MapPin } from 'lucide-react'
 
 const Hero = () => {
   return (
-    <section id="hero" className="min-h-screen flex items-center justify-center bg-white text-black relative overflow-hidden">
-      <div className="absolute inset-0 bg-white opacity-50"></div>
+    <section 
+      id="hero" 
+      className="min-h-screen flex items-center justify-center bg-white text-black relative overflow-hidden"
+    >
+      {/* Clean background - no overlay needed */}
       
       <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-6xl">
         {/* Spy Icon - Large and Centered */}

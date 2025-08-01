@@ -3,6 +3,7 @@
 import Navigation from './Navigation'
 import Hero from './Hero'
 import About from './About'
+import Experience from './Experience'
 import Projects from './Projects'
 import Skills from './Skills'
 import Certifications from './Certifications'
@@ -19,6 +20,7 @@ const Portfolio = ({ onLogout }: PortfolioProps) => {
       <Navigation onLogout={onLogout} />
       <Hero />
       <About />
+      <Experience />
       <Projects />
       <Skills />
       <Certifications />

@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { ExternalLink, Github, Server, Monitor, Database, Lock, Terminal } from 'lucide-react'
+import { ExternalLink, Github, Server, Monitor, Database, Lock, Terminal, BarChart3, Bot } from 'lucide-react'
 
 const Projects = () => {
   const projects = [
@@ -10,6 +10,7 @@ const Projects = () => {
       description: "Complete Active Directory lab with domain controllers, RBAC implementation, and Group Policy automation. Demonstrates Windows administration and security best practices.",
       technologies: ["Windows Server 2022", "Active Directory", "PowerShell", "Group Policy"],
       icon: <Server className="h-8 w-8" />,
+      githubUrl: "https://github.com/letisiapangataa/windows-server-lab", // Add your GitHub link here
       highlights: [
         "Automated user provisioning with PowerShell",
         "RBAC implementation with least privilege",
@@ -22,6 +23,7 @@ const Projects = () => {
       description: "Automated Linux server deployment and configuration using Bash scripting and infrastructure as code principles.",
       technologies: ["Ubuntu/CentOS", "Bash", "systemd", "SSH Hardening"],
       icon: <Terminal className="h-8 w-8" />,
+      githubUrl: "https://github.com/letisiapangataa/linux-infra-automation-lab", // Add your GitHub link here
       highlights: [
         "Automated server hardening scripts",
         "System monitoring with custom dashboards",
@@ -34,6 +36,7 @@ const Projects = () => {
       description: "Comprehensive network lab demonstrating VLAN segmentation, firewall configuration, and security monitoring aligned with CCNAv7 principles.",
       technologies: ["Cisco Packet Tracer", "pfSense", "Wireshark", "VLAN Config"],
       icon: <Lock className="h-8 w-8" />,
+      githubUrl: "https://github.com/letisiapangataa/network-security-lab-ccnav7", // Add your GitHub link here
       highlights: [
         "Network segmentation design",
         "Firewall rule optimization",
@@ -46,6 +49,7 @@ const Projects = () => {
       description: "Custom monitoring solution for infrastructure health, performance metrics, and security events with automated alerting.",
       technologies: ["Python", "Grafana", "InfluxDB", "Prometheus"],
       icon: <Monitor className="h-8 w-8" />,
+      githubUrl: "https://github.com/letisiapangataa/system-monitoring-dashboard", // Add your GitHub link here
       highlights: [
         "Real-time performance monitoring",
         "Custom alerting workflows",
@@ -58,11 +62,38 @@ const Projects = () => {
       description: "SQL Server and MySQL administration lab focusing on security, backup strategies, and performance optimization.",
       technologies: ["SQL Server", "MySQL", "T-SQL", "Performance Tuning"],
       icon: <Database className="h-8 w-8" />,
+      githubUrl: "https://github.com/letisiapangataa/database-administration-lab", // Add your GitHub link here
       highlights: [
         "Database security hardening",
         "Automated backup solutions",
         "Query optimization techniques",
         "Disaster recovery testing"
+      ]
+    },
+    {
+      title: "Retail Analytics Dashboard",
+      description: "Built an end-to-end analytics pipeline to visualize product performance and sales trends with comprehensive data insights.",
+      technologies: ["Azure SQL", "Power BI", "Python", "Power Automate"],
+      icon: <BarChart3 className="h-8 w-8" />,
+      githubUrl: "https://github.com/letisiapangataa/retail-analytics-dashboard",
+      highlights: [
+        "Data ingestion and transformation using Python",
+        "Power BI dashboards with filters and KPIs",
+        "Scheduled refresh using Power Automate",
+        "End-to-end analytics pipeline implementation"
+      ]
+    },
+    {
+      title: "AI Chatbot for Student Support", 
+      description: "Developed a Q&A chatbot to support student queries using Azure AI services with intelligent response capabilities.",
+      technologies: ["Azure Bot Framework", "QnA Maker", "HTML/CSS", "Azure AI Services"],
+      icon: <Bot className="h-8 w-8" />,
+      githubUrl: "https://github.com/letisiapangataa/student-support-chatbot",
+      highlights: [
+        "Azure Bot Service integration",
+        "QnA Maker knowledge base implementation",
+        "Embedded in front-end HTML portal",
+        "Intelligent query processing and response"
       ]
     }
   ]
@@ -82,7 +113,7 @@ const Projects = () => {
           </h2>
           <p className="text-xl text-black max-w-3xl mx-auto leading-relaxed">
             Hands on and practical infrastructure and security projects showcasing practical skills 
-            relevant to systems engineering at GCSB.
+            potentially relevant to systems engineering role at GCSB.
           </p>
         </motion.div>
 
@@ -122,7 +153,7 @@ const Projects = () => {
                 </ul>
               </div>
 
-              <div className="border-t border-black pt-6">
+              <div className="border-t border-black pt-6 mb-6">
                 <h4 className="font-semibold text-black mb-3">Technologies:</h4>
                 <div className="flex flex-wrap gap-2">
                   {project.technologies.map((tech, i) => (
@@ -133,6 +164,29 @@ const Projects = () => {
                       {tech}
                     </span>
                   ))}
+                </div>
+              </div>
+
+              {/* GitHub Link Section */}
+              <div className="border-t border-black pt-6">
+                <div className="flex items-center justify-between">
+                  <h4 className="font-semibold text-black">View Code:</h4>
+                  {project.githubUrl ? (
+                    <motion.a
+                      href={project.githubUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      whileHover={{ scale: 1.05 }}
+                      className="flex items-center space-x-2 bg-black text-white px-4 py-2 rounded-lg hover:bg-gray-800 transition-colors"
+                    >
+                      <Github className="h-4 w-4" />
+                      <span className="text-sm">GitHub</span>
+                    </motion.a>
+                  ) : (
+                    <div className="bg-white border border-black px-4 py-2 rounded-lg">
+                      <span className="text-black text-sm">Repository Coming Soon</span>
+                    </div>
+                  )}
                 </div>
               </div>
             </motion.div>

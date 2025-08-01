@@ -13,7 +13,7 @@ const Contact = () => {
     },
     {
       icon: <Phone className="h-6 w-6" />,
-      label: "Phone",
+      label: "Mobile Phone (Work)",
       value: "+64 027 701 6376",
     },
     {
@@ -41,7 +41,7 @@ const Contact = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Get In Touch
+            Contact Details
           </h2>
           <p className="text-xl text-black max-w-3xl mx-auto leading-relaxed">
             Ready to contribute to New Zealand's National Security through technical excellence. 

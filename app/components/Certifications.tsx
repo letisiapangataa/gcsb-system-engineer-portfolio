@@ -6,54 +6,91 @@ import { Award, Download, ExternalLink, Calendar } from 'lucide-react'
 const Certifications = () => {
   const certifications = [
     {
-      title: "CCNAv7 - Cisco Certified Network Associate",
+      title: "Microsoft Certified: Azure Developer Associate (AZ-204)",
       status: "In Progress",
-      issuer: "Cisco",
-      date: "Expected 2024",
-      description: "Comprehensive networking fundamentals including IPv4/IPv6, VLANs, security, and automation",
-      relevance: "Essential for understanding network infrastructure security and management"
+      issuer: "Microsoft",
+      date: "2025",
+      description: "Advanced Azure development skills including compute solutions, storage, security, and monitoring",
+      relevance: "Critical for developing secure cloud-native applications and managing Azure infrastructure in government environments"
     },
     {
-      title: "CompTIA Security+",
-      status: "Planned",
-      issuer: "CompTIA",
-      date: "2024",
-      description: "Industry-standard cybersecurity certification covering threat management and risk mitigation",
-      relevance: "Directly applicable to GCSB's cybersecurity mission and threat assessment capabilities"
-    },
-    {
-      title: "Microsoft Azure Fundamentals",
-      status: "Planned",
+      title: "Microsoft Certified: Azure AI Fundamentals (AI-900)",
+      status: "Completed",
       issuer: "Microsoft",
       date: "2024",
-      description: "Cloud computing fundamentals and Azure services overview",
-      relevance: "Modern infrastructure management and cloud security principles"
+      description: "Fundamental knowledge of machine learning and AI concepts on Microsoft Azure",
+      relevance: "Essential for understanding AI/ML capabilities that support GCSB's intelligence analysis and automation initiatives"
     },
     {
-      title: "ITIL Foundation",
-      status: "Planned",
-      issuer: "Axelos",
+      title: "Microsoft Certified: Azure Fundamentals (AZ-900)",
+      status: "Completed",
+      issuer: "Microsoft",
       date: "2024",
-      description: "IT service management best practices and lifecycle management",
-      relevance: "Structured approach to IT operations and service delivery"
+      description: "Core Azure services, pricing, and support models for cloud computing",
+      relevance: "Foundation for cloud infrastructure management and security in modern government IT environments"
+    },
+    {
+      title: "Microsoft Certified: Security, Compliance, and Identity Fundamentals (SC-900)",
+      status: "Completed",
+      issuer: "Microsoft",
+      date: "2024",
+      description: "Security, compliance, and identity concepts across cloud and on-premises environments",
+      relevance: "Directly applicable to GCSB's security requirements, compliance frameworks, and identity management protocols"
+    },
+    {
+      title: "Cisco Certified Network Associate v7 (CCNAv7)",
+      status: "Completed",
+      issuer: "Cisco",
+      date: "2024",
+      description: "Enterprise networking, security, and automation including IPv4/IPv6, VLANs, and network security",
+      relevance: "Essential for securing and managing network infrastructure critical to national security operations"
+    },
+    {
+      title: "ARIS Certificate – Software AG",
+      status: "Completed",
+      issuer: "Software AG",
+      date: "2024",
+      description: "Business process modeling and enterprise architecture using ARIS methodology",
+      relevance: "Valuable for documenting and optimizing IT processes and security workflows within government frameworks"
     }
   ]
 
   const achievements = [
     {
-      title: "Systems Engineering Lab Portfolio",
-      description: "Comprehensive hands-on demonstration of Windows/Linux administration",
-      date: "2024"
+      title: "Windows Server Administration Lab",
+      description: "Complete Active Directory deployment with PowerShell automation and Group Policy management",
+      date: "2023",
+      skills: ["Operating Systems", "Scripting & Automation"]
     },
     {
-      title: "Security Automation Scripts",
-      description: "PowerShell and Bash scripts for system hardening and monitoring",
-      date: "2024"
+      title: "Linux Infrastructure Automation",
+      description: "Ubuntu/CentOS server hardening with Bash scripting and system monitoring implementation",
+      date: "2023",
+      skills: ["Operating Systems", "Scripting & Automation", "Security & Compliance"]
     },
     {
-      title: "Network Security Lab",
-      description: "VLAN segmentation and firewall configuration demonstration",
-      date: "2024"
+      title: "Network Security & Compliance Lab",
+      description: "Cisco CCNAv7-aligned VLAN segmentation, firewall configuration, and NZISM security frameworks",
+      date: "2023",
+      skills: ["Networking", "Security & Compliance"]
+    },
+    {
+      title: "Azure Cloud Security Implementation",
+      description: "Azure Security Center deployment with Identity & Access Management and threat detection",
+      date: "2022",
+      skills: ["Cloud & AI Platforms", "Security & Compliance"]
+    },
+    {
+      title: "Database Administration & Monitoring",
+      description: "SQL Server and MySQL administration with Python-based performance monitoring dashboards",
+      date: "2022",
+      skills: ["Enterprise Architecture", "Scripting & Automation"]
+    },
+    {
+      title: "Enterprise Process Modeling",
+      description: "ARIS-based business process documentation and system integration architecture design",
+      date: "2021",
+      skills: ["Enterprise Architecture"]
     }
   ]
 
@@ -138,7 +175,7 @@ const Certifications = () => {
           >
             <h3 className="text-2xl font-bold text-black mb-8 flex items-center">
               <ExternalLink className="mr-3 h-8 w-8" />
-              Technical Achievements
+              Technical Achievements & Skills Alignment
             </h3>
             
             <div className="space-y-6 mb-8">
@@ -160,9 +197,24 @@ const Certifications = () => {
                       {achievement.date}
                     </span>
                   </div>
-                  <p className="text-black text-sm leading-relaxed">
+                  <p className="text-black text-sm leading-relaxed mb-3">
                     {achievement.description}
                   </p>
+                  
+                  {/* Skills Alignment Tags */}
+                  <div className="border-t border-gray-200 pt-3">
+                    <p className="text-xs font-semibold text-black mb-2">Aligned Skills:</p>
+                    <div className="flex flex-wrap gap-1">
+                      {achievement.skills.map((skill, i) => (
+                        <span
+                          key={i}
+                          className="px-2 py-1 bg-black text-white rounded text-xs"
+                        >
+                          {skill}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
                 </motion.div>
               ))}
             </div>
@@ -178,15 +230,27 @@ const Certifications = () => {
               <div className="space-y-2 text-sm">
                 <div className="flex justify-between">
                   <span>CCNAv7 Completion:</span>
-                  <span>Q1 2024</span>
+                  <span>Dec 2022</span>
                 </div>
                 <div className="flex justify-between">
-                  <span>CompTIA Security+:</span>
-                  <span>Q2 2024</span>
+                  <span>Azure Fundamentals (AZ-900):</span>
+                  <span>May 2023</span>
                 </div>
                 <div className="flex justify-between">
-                  <span>Azure Fundamentals:</span>
-                  <span>Q3 2024</span>
+                  <span>Azure AI Fundamentals (AI-900):</span>
+                  <span>Oct 2023</span>
+                </div>
+                <div className="flex justify-between">
+                  <span>Azure Security/Compliance (SC-900):</span>
+                  <span>Feb 2024</span>
+                </div>
+                <div className="flex justify-between">
+                  <span>ARIS Certificate:</span>
+                  <span>Aug 2024</span>
+                </div>
+                <div className="flex justify-between">
+                  <span>Azure Developer Associate (AZ-204):</span>
+                  <span className="text-yellow-400">In Progress</span>
                 </div>
               </div>
             </motion.div>

@@ -22,6 +22,7 @@ const Navigation = ({ onLogout }: NavigationProps) => {
 
   const navItems = [
     { href: '#about', label: 'About' },
+    { href: '#experience', label: 'Experience' },
     { href: '#projects', label: 'Projects' },
     { href: '#skills', label: 'Skills' },
     { href: '#certifications', label: 'Certifications' },
@@ -42,9 +43,9 @@ const Navigation = ({ onLogout }: NavigationProps) => {
             whileHover={{ scale: 1.05 }}
             className="flex items-center space-x-2"
           >
-            <span className="text-xl font-bold text-black">
+            <a href="#" className="text-xl font-bold text-black">
               GCSB Portfolio
-            </span>
+            </a>
           </motion.div>
 
           {/* Desktop Navigation */}

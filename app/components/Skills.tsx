@@ -9,69 +9,71 @@ const Skills = () => {
       title: "Operating Systems",
       icon: <Server className="h-8 w-8" />,
       skills: [
-        { name: "Windows Server 2016/2019/2022", level: 90 },
-        { name: "Ubuntu/CentOS Linux", level: 85 },
-        { name: "Windows 10/11 Administration", level: 95 },
-        { name: "macOS Support", level: 75 }
+        { name: "Windows Server 2016/2019/2022", level: 88 },
+        { name: "Ubuntu/CentOS Linux", level: 82 },
+        { name: "Windows 10/11 Administration", level: 92 },
+        { name: "macOS Support", level: 70 }
       ]
     },
     {
       title: "Scripting & Automation",
       icon: <Code className="h-8 w-8" />,
       skills: [
-        { name: "PowerShell", level: 90 },
-        { name: "Bash Scripting", level: 85 },
-        { name: "Python", level: 80 },
-        { name: "Batch Scripting", level: 85 }
+        { name: "PowerShell", level: 85 },
+        { name: "Bash Scripting", level: 78 },
+        { name: "Python", level: 75 },
+        { name: "JavaScript/TypeScript", level: 80 }
       ]
     },
     {
       title: "Security & Compliance",
       icon: <Shield className="h-8 w-8" />,
       skills: [
-        { name: "RBAC Implementation", level: 85 },
-        { name: "Threat Modeling", level: 80 },
-        { name: "Security Auditing", level: 85 },
-        { name: "Compliance Frameworks", level: 75 }
+        { name: "Azure Security Center", level: 82 },
+        { name: "Identity & Access Management", level: 85 },
+        { name: "Threat Detection & Response", level: 78 },
+        { name: "Government Compliance (NZISM)", level: 75 }
       ]
     },
     {
       title: "Networking",
       icon: <Network className="h-8 w-8" />,
       skills: [
-        { name: "TCP/IP Fundamentals", level: 90 },
-        { name: "VLAN Configuration", level: 85 },
-        { name: "Firewall Management", level: 80 },
-        { name: "VPN Implementation", level: 75 }
+        { name: "TCP/IP & Network Protocols", level: 88 },
+        { name: "Cisco Network Configuration", level: 85 },
+        { name: "Network Security & Firewalls", level: 80 },
+        { name: "VPN & Secure Tunneling", level: 82 }
       ]
     },
     {
-      title: "Database Administration",
-      icon: <Database className="h-8 w-8" />,
-      skills: [
-        { name: "SQL Server", level: 85 },
-        { name: "MySQL/MariaDB", level: 80 },
-        { name: "T-SQL", level: 85 },
-        { name: "Performance Tuning", level: 75 }
-      ]
-    },
-    {
-      title: "Cloud & Virtualization",
+      title: "Cloud & AI Platforms",
       icon: <Cloud className="h-8 w-8" />,
       skills: [
-        { name: "Hyper-V", level: 85 },
-        { name: "VMware vSphere", level: 80 },
-        { name: "Azure Fundamentals", level: 75 },
-        { name: "Docker Containers", level: 70 }
+        { name: "Microsoft Azure", level: 85 },
+        { name: "Azure AI Services", level: 78 },
+        { name: "Azure DevOps", level: 72 },
+        { name: "Docker & Containerization", level: 75 }
+      ]
+    },
+    {
+      title: "Enterprise Architecture",
+      icon: <Database className="h-8 w-8" />,
+      skills: [
+        { name: "ARIS Business Process Modeling", level: 80 },
+        { name: "System Integration Design", level: 82 },
+        { name: "Database Administration (SQL)", level: 85 },
+        { name: "Enterprise Security Architecture", level: 78 }
       ]
     }
   ]
 
   const certifications = [
-    "CCNAv7 (In Progress)",
-    "CompTIA Security+ (Planned)",
-    "Microsoft Azure Fundamentals",
-    "ITIL Foundation"
+    "Microsoft Azure Developer Associate (AZ-204) - In Progress",
+    "Microsoft Azure AI Fundamentals (AI-900) - Certified",
+    "Microsoft Azure Fundamentals (AZ-900) - Certified", 
+    "Microsoft Security, Compliance & Identity (SC-900) - Certified",
+    "Cisco CCNAv7 - Certified",
+    "Software AG ARIS Certificate - Certified"
   ]
 
   return (
@@ -164,10 +166,11 @@ const Skills = () => {
             <div>
               <h4 className="font-semibold text-gray-800 mb-4">Continuous Learning Focus:</h4>
               <ul className="space-y-2 text-gray-700">
-                <li>• Advanced cybersecurity practices</li>
-                <li>• Cloud infrastructure management</li>
-                <li>• DevOps and automation tools</li>
-                <li>• Threat intelligence and analysis</li>
+                <li>• Advanced Azure cloud security implementations</li>
+                <li>• AI/ML integration for intelligence systems</li>
+                <li>• Zero-trust architecture principles</li>
+                <li>• Government security frameworks (NZISM)</li>
+                <li>• Advanced threat hunting and incident response</li>
               </ul>
             </div>
           </div>

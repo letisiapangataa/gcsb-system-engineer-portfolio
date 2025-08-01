@@ -66,12 +66,12 @@ const About = () => {
               I am confident that my skills in system administration, automation using PowerShell, and the application of security best practices position me to support the GCSB’s mission. I view robust and secure infrastructure as essential to the success of intelligence operations, and I am committed to upholding the principles of integrity, reliability, and continuous improvement in this critical area.
             </p>
             <div className="bg-black text-white p-6 rounded-lg">
-              <p className="font-semibold mb-2">Core Values:</p>
+              <p className="font-semibold mb-2">Core Values :</p>
               <ul className="space-y-1">
-                <li>• Commitment to National Security</li>
-                <li>• Technical Excellence and Continuous Learning</li>
-                <li>• Security-first mindset in All Operations</li>
-                <li>• Collaborative and Professional Approach</li>
+                <li>Integrity & confidentiality for national security</li>
+                <li>Technical excellence for resilient systems</li>
+                <li>Security-first in all operations</li>
+                <li>Collaboration & professionalism</li>
               </ul>
             </div>
           </motion.div>
@@ -112,8 +112,8 @@ const About = () => {
             Why GCSB?
           </h3>
           <ul className="list-disc list-inside text-black text-left max-w-3xl mx-auto space-y-2">
-            <li>Opportunity to contribute to national security through technical excellence.</li>
-            <li>Apply automation and security best practices in mission-critical environments.</li>
+            <li>Opportunity to contribute to New Zealand's National Security through technical excellence.</li>
+            <li>Apply strategic automation and security best practices in mission-critical environments.</li>
             <li>Collaborate with experts dedicated to protecting New Zealand.</li>
             <li>Support resilient and secure infrastructure for intelligence operations.</li>
           </ul>
