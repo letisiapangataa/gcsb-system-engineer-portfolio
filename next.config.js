@@ -6,11 +6,6 @@ const nextConfig = {
   distDir: 'dist',
   images: {
     unoptimized: true
-  },
-  basePath: process.env.NODE_ENV === 'production' ? '' : '',
-  assetPrefix: process.env.NODE_ENV === 'production' ? '' : '',
-  experimental: {
-    optimizeCss: false
   }
 }
 
