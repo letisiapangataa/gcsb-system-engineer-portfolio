@@ -60,7 +60,7 @@ const Hero = () => {
           className="text-lg mb-12 max-w-3xl mx-auto text-black"
         >
         Supporting Aotearoa New Zealand's National Security through 
-        <p>infrastructure automation, system administration, and security-focused engineering.</p>
+        infrastructure automation, system administration, and security-focused engineering.
         </motion.p>
 
         <motion.div
