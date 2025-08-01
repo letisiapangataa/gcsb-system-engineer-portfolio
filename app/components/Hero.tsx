@@ -80,7 +80,7 @@ const Hero = () => {
           </motion.a>
           
           <motion.a
-            href="/resume.pdf"
+            href="\Letisia_Tatimoa_Pangataa_CV_GCSB_NZSIS_System_Engineer_Level_1_Role_2025.pdf"
             target="_blank"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
