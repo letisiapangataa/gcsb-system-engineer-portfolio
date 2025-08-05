@@ -208,6 +208,17 @@ const Experience = () => {
             Client engagements verified through Microsoft Corporation internal documentation and project records.
           </p>
         </div>
+
+        <div className="flex justify-center mt-6 mb-2">
+          <a
+            href="/Letisia_Pangataa_FY25_Impact_Review_Microsoft_New_Zealand.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-bold px-8 py-3 bg-black text-white rounded-lg shadow-lg hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-black focus:ring-offset-2 transition text-lg"
+          >
+            View Letisia Pangata'a's FY25 Impact Review (PDF)
+          </a>
+        </div>
       </div>
     </section>
   )
